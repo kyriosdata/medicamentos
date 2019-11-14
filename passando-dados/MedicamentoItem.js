@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
   },
 
   denominacao: {
-    fontSize: 16,
-    fontFamily: 'open-sans-bold'
+    fontSize: 16
   },
 });

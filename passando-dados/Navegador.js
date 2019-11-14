@@ -1,9 +1,7 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import SplashScreen from './SplashScreen';
 import HomeScreen, { navigationOptions } from './HomeScreen';
-import ProdutoScreen from './ProdutoScreen';
 import FavoritosScreen from './FavoritosScreen';
 import MedicamentoScreen from './MedicamentoScreen';
 

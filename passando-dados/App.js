@@ -6,7 +6,6 @@ import { useScreens } from "react-native-screens";
 // Eficiência apenas (recomendado)
 useScreens();
 
-import SplashScreen from "./SplashScreen";
 import Navegador from "./Navegador";
 
 const fetchFonts = () => {
@@ -34,11 +33,7 @@ export default function App(props) {
         onError={console.warn}
       />
     );
-  }
-
-  if (autorizado) {
-    return <Navegador />;
   } else {
-    return <SplashScreen callQuandoConcluido={concluido} />;
+    return <Navegador />;
   }
 }

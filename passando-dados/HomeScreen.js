@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   View,
-  Text,
   TextInput,
   FlatList,
-  Button,
   StyleSheet,
-  TouchableOpacity,
 } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from './HeaderButton';
