@@ -6,16 +6,10 @@ Base de medicamentos disponíveis na rede pública municipal de Goiânia (GO).
 ### Estratégia de atualização (update)
 Produto é acompanhado de uma verso que pode se desatualizar rapidamente. Gerar uma nova versão para cada atualização não é considerado eficiente. 
 
-- Arquivo **versoes.json** contém versões produzidas ao longo do tempo. 
+- Arquivo **versao.json** mantém a versão corrente.
 ```javascript
 {
-  'corrente' : '2020.01.25',
-  'historico' : [
-    { 
-      'versao' : '2020.01.25',
-      'data'    : '31/01/2020T16h20min32s'
-    }
-  ]
+  'corrente' : '2020.01.25'
 }
 ```
 
