@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-secure-s3-dev-191203-authRole",
+            "UnauthRoleArn": "arn:aws:iam::422738898961:role/amplify-secure-s3-dev-191203-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::422738898961:role/amplify-secure-s3-dev-191203-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-secure-s3-dev-191203-deployment",
+            "UnauthRoleName": "amplify-secure-s3-dev-191203-unauthRole",
+            "StackName": "amplify-secure-s3-dev-191203",
+            "StackId": "arn:aws:cloudformation:us-east-1:422738898961:stack/amplify-secure-s3-dev-191203/bd05fb10-08b5-11ea-92d4-0a6641f83659"
+        }
+    }
+}
