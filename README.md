@@ -7,7 +7,7 @@ Base de medicamentos disponíveis na rede pública municipal de Goiânia (GO).
 Produto é acompanhado de uma verso que pode se desatualizar rapidamente. Gerar uma nova versão para cada atualização não é considerado eficiente. 
 
 - Arquivo **versoes.json** contém versões produzidas ao longo do tempo. 
-```json
+```javascript
 {
   'corrente' : '2020.01.25',
   'historico' : [
