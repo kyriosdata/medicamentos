@@ -8,6 +8,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@aws-amplify/api": "^1.2.4",
+    "@aws-amplify/pubsub": "^1.2.4",
     "aws-amplify": "^1.2.4",
     "aws-amplify-react-native": "^2.2.3",
     "expo": "^35.0.0",
