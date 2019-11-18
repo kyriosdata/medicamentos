@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { FlatList, ActivityIndicator, Text, Button, View } from "react-native";
+import { FlatList, Text, Button, View } from "react-native";
 import axios from "axios";
 
+// Usado para teste
 const FACEBOOK = "https://facebook.github.io/react-native/movies.json";
 
-// DEVE SER CONFIGURADO CORS
-const S3REGION = "https://s3-sa-east-1.amazonaws.com";
+// DEVE SER CONFIGURADO CORS (conteúdo disponível publicamente)
+const S3REGION = "https://s3.amazonaws.com";
 const BUCKET = "com.github.kyriosdata.medicamentos";
 const OBJECT = "dados.json";
 const URL = `${S3REGION}/${BUCKET}/${OBJECT}`;
