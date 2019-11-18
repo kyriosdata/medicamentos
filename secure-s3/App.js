@@ -5,38 +5,40 @@ import axios from "axios";
 
 Amplify.configure({
   Auth: {
-    identityPoolId: "us-east-1:187ac862-fb82-45e9-bad0-5fe6468278f3",
+    identityPoolId: "us-east-1:0cf6fee6-e85a-46bc-a413-b33f398c118e",
     region: "us-east-1"
   },
   Storage: {
     AWSS3: {
-      bucket: "com.github.kyriosdata.medicamentos"
+      bucket: "br.ufg.inf.medicamentos",
+      region: "sa-east-1"
     }
   }
 });
 
-const trata = response => {
-  console.log("recebendo...");
-  console.log(response.data);
-};
-
 const error = error => console.error(error);
-
-function getRemoteData(url) {
-  return axios
-    .get(url)
-    .then(trata)
-    .catch(error);
-}
 
 export default function App() {
   const [inicializado, setInicializado] = useState(false);
   const [medicamentos, setMedicamentos] = useState(null);
 
+  const trata = response => {
+    console.log("recebendo...");
+    setMedicamentos(response.data);
+    console.log(response.data.length);
+  };
+
+  function getRemoteData(url) {
+    return axios
+      .get(url)
+      .then(trata)
+      .catch(error);
+  }
+
   if (inicializado) {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Text>AWS</Text>
       </View>
     );
   }
@@ -47,7 +49,7 @@ export default function App() {
       getRemoteData(url);
     })
     .then(x => setInicializado(true))
-    .catch(err => console.log("ocorreu um erro"));
+    .catch(err => console.log("ocorreu um erro " + err));
 
   return (
     <View>
