@@ -30,11 +30,16 @@ export default function App() {
         if (error != null) {
           alert("Failed to retrieve an object: " + error);
         } else {
-          console.log("Loaded " + data.ContentLength + " bytes");
-          setDados(JSON.parse(data.Body));
+          const carregado = JSON.parse(data.Body);
+          console.log("total de objetos: " + carregado.length);
+          setDados(carregado);
         }
       }
     );
+  }
+
+  function clear() {
+    setDados();
   }
 
   function exibe(medicamento) {
@@ -52,8 +57,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.botao}>
-        <Button title="download" onPress={download} />
-        <Text> (para carregar)</Text>
+        <Button title="download" onPress={() => download()} />
+        <Button title="clear" onPress={() => clear()} />
       </View>
       <FlatList
         data={dados}
