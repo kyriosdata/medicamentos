@@ -1,10 +1,19 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button, FlatList } from "react-native";
 import AWS from "aws-sdk";
 
+/**
+ * Deve-se configurar AWS
+ * (a) usuário "medicamentos.frontend" (credencial abaixo)
+ * (b) criar política de acesso veja https://aws.amazon.com/blogs/security/writing-iam-policies-how-to-grant-access-to-an-amazon-s3-bucket/
+ *     (apenas permissão getObject no bucket medicamentos.frontend)
+ * (c) associar política criada ao usuário criado.
+ * (d) configurar CORS
+ */
+
 AWS.config.update({
-  accessKeyId: "AKIAWE3JTWAI5DFZAJR4",
-  secretAccessKey: "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"
+  accessKeyId: "AKIAWE3JTWAI4NEGMOPF",
+  secretAccessKey: "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"
 });
 
 export default function App() {
@@ -14,7 +23,7 @@ export default function App() {
     var s3 = new AWS.S3();
     s3.getObject(
       {
-        Bucket: "medicamentostest-test",
+        Bucket: "medicamentos.frontend",
         Key: "dados.json"
       },
       function(error, data) {
@@ -28,24 +37,39 @@ export default function App() {
     );
   }
 
-  if (dados) {
+  function exibe(medicamento) {
     return (
       <View>
-        <Text>{dados[0].denominacao}</Text>
+        <Text>
+          {medicamento.id}, {medicamento.denominacao},{" "}
+          {medicamento.concentracao}, {medicamento.forma}, {medicamento.atc},{" "}
+          {medicamento.componente}
+        </Text>
       </View>
     );
   }
 
   return (
     <View style={styles.container}>
-      <Button title="download" onPress={download} />
+      <View style={styles.botao}>
+        <Button title="download" onPress={download} />
+        <Text> (para carregar)</Text>
+      </View>
+      <FlatList
+        data={dados}
+        renderItem={item => exibe(item.item)}
+        keyExtractor={item => item.id}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
     backgroundColor: "#fff"
+  },
+
+  botao: {
+    flexDirection: "row"
   }
 });
