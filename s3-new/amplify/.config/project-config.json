@@ -1,0 +1,17 @@
+{
+    "projectName": "s3-new",
+    "version": "2.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "/",
+            "DistributionDir": "dist",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}

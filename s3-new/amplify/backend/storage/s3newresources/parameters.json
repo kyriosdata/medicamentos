@@ -1,0 +1,33 @@
+{
+    "bucketName": "medicamentos",
+    "authPolicyName": "s3_amplify_c1cf6bd4",
+    "unauthPolicyName": "s3_amplify_c1cf6bd4",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "selectedGuestPermissions": [
+        "s3:PutObject",
+        "s3:DeleteObject"
+    ],
+    "selectedAuthenticatedPermissions": [
+        "s3:PutObject",
+        "s3:DeleteObject"
+    ],
+    "s3PermissionsAuthenticatedPublic": "s3:PutObject,s3:DeleteObject",
+    "s3PublicPolicy": "Public_policy_c24c5759",
+    "s3PermissionsAuthenticatedUploads": "s3:PutObject",
+    "s3UploadsPolicy": "Uploads_policy_c24c5759",
+    "s3PermissionsAuthenticatedProtected": "s3:PutObject,s3:DeleteObject",
+    "s3ProtectedPolicy": "Protected_policy_e29be17d",
+    "s3PermissionsAuthenticatedPrivate": "s3:PutObject,s3:DeleteObject",
+    "s3PrivatePolicy": "Private_policy_e29be17d",
+    "AuthenticatedAllowList": "DISALLOW",
+    "s3ReadPolicy": "read_policy_c24c5759",
+    "s3PermissionsGuestPublic": "s3:PutObject,s3:DeleteObject",
+    "s3PermissionsGuestUploads": "s3:PutObject",
+    "GuestAllowList": "DISALLOW",
+    "triggerFunction": "NONE"
+}

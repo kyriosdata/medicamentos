@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"s3new4dcea08d": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"s3newresources": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
