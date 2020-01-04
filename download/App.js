@@ -22,6 +22,12 @@ async function download(url, callback) {
 
 export default function App() {
   const [conteudo, setConteudo] = useState([{ id: "1", denominacao: "ok" }]);
+  const [refresh, setRefresh] = useState(false);
+
+  function limpaLista() {
+    setRefresh(!refresh);
+    setConteudo([]);
+  }
 
   function feedback(codigo, dados) {
     const medicamentos = JSON.parse(dados);
@@ -38,10 +44,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.entrada}>
+        <Button title="Limpa lista" onPress={limpaLista} />
         <Button title="Requisite download..." onPress={baixeArquivo} />
       </View>
       <View style={styles.saida}>
         <FlatList
+          extraData={refresh}
           data={conteudo}
           renderItem={itemData => <Text>{itemData.item.denominacao}</Text>}
           keyExtractor={(item, index) => item.id}
@@ -59,6 +67,9 @@ const styles = StyleSheet.create({
   },
 
   entrada: {
+    width: "90%",
+    flexDirection: "row",
+    justifyContent: "space-around",
     marginTop: 40
   },
 
