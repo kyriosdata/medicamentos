@@ -7,7 +7,7 @@ Base de medicamentos disponíveis na rede pública municipal de Goiânia (GO).
 - Versão inicial: [aqui](https://xd.adobe.com/view/15d4b16b-5017-47b0-9fc9-3dc1e916f2b7-4087/?fullscreen)
 - PFC Bruno Marques
 - Repositório Douglas (https://github.com/doug1n/drugs-consultation-frontend)
-- TCC (Douglas) (documentos/tcc-douglas-vieira.pdf)
+- Douglas [tcc](documentos/tcc-douglas-vieira.pdf)
 
 # Tarefas (protótipos)
 
