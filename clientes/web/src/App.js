@@ -1,21 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./images/logo.png";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <img src={logo} alt="logo" />
+        <p class="has-text-primary-light">
+          Informando pacientes e profissionais de saúde.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/kyriosdata/medicamentos"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Sistema Medicamentos
         </a>
       </header>
     </div>
