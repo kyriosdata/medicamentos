@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/medicamentos/static/css/main.a617e044.chunk.css",
-    "main.js": "/medicamentos/static/js/main.5fc4f30f.chunk.js",
-    "main.js.map": "/medicamentos/static/js/main.5fc4f30f.chunk.js.map",
+    "main.css": "/medicamentos/static/css/main.7189c892.chunk.css",
+    "main.js": "/medicamentos/static/js/main.a8414b26.chunk.js",
+    "main.js.map": "/medicamentos/static/js/main.a8414b26.chunk.js.map",
     "runtime-main.js": "/medicamentos/static/js/runtime-main.a4cfc469.js",
     "runtime-main.js.map": "/medicamentos/static/js/runtime-main.a4cfc469.js.map",
     "static/js/2.53602963.chunk.js": "/medicamentos/static/js/2.53602963.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.cc19818d.chunk.js": "/medicamentos/static/js/3.cc19818d.chunk.js",
     "static/js/3.cc19818d.chunk.js.map": "/medicamentos/static/js/3.cc19818d.chunk.js.map",
     "index.html": "/medicamentos/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/medicamentos/static/css/main.a617e044.chunk.css.map",
+    "static/css/main.7189c892.chunk.css.map": "/medicamentos/static/css/main.7189c892.chunk.css.map",
     "static/js/2.53602963.chunk.js.LICENSE.txt": "/medicamentos/static/js/2.53602963.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/medicamentos/static/media/logo.6ce24c58.svg"
+    "static/media/logo.263d983d.png": "/medicamentos/static/media/logo.263d983d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a4cfc469.js",
     "static/js/2.53602963.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.5fc4f30f.chunk.js"
+    "static/css/main.7189c892.chunk.css",
+    "static/js/main.a8414b26.chunk.js"
   ]
 }
