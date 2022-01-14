@@ -18,7 +18,7 @@ profissionais de saúde e sistemas de software externos (por exemplo, o Conecte 
 por um responsável técnico pelas informações e a operação do sistema é realizada
 por um administrador.
 
-![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml?token=GHSAT0AAAAAABOOXPAQU5AILBOST54L2ZN2YPKXOYA)
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml)
 
 ## Design
 
@@ -29,7 +29,7 @@ atualizações e produção dos dados que serão consultados
 pelo serviço Search. Desta forma, podemos ter tantas
 instâncias de Search quanto necessárias.
 
-![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml?token=GHSAT0AAAAAABOOXPAQU5AILBOST54L2ZN2YPKXOYA)
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/design.puml)
 
 ## Protótipos
 
