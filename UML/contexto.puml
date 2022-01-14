@@ -4,7 +4,13 @@ hide circle
 hide methods
 hide empty members
 
-skinparam class {
+skinparam usecase {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam actor {
     BackgroundColor White
     ArrowColor Black
     BorderColor #505050
@@ -12,17 +18,17 @@ skinparam class {
 
 actor Indivíduo
 actor :Profissional de Saúde: as PS
+actor :Software Cliente: as CLIENTE 
 actor Administrador
 actor :Responsável Técnico: as TECNICO
-actor :Software Cliente: as CLIENTE 
 
 (Medicamentos\nsistema) as SISTEMA
 
 Indivíduo --> SISTEMA
 PS --> SISTEMA
+CLIENTE --> SISTEMA
 
 Administrador -up-> SISTEMA
 TECNICO -up-> SISTEMA
-CLIENTE -up-> SISTEMA
 
 @enduml

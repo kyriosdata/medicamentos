@@ -3,31 +3,22 @@
 Um sistema de informação para auxiliar o acesso a medicamentos oferecidos
 pela rede municipal de assistência à saúde.
 
-## Contexto
+## Problema
 
 Cada município oferece gratuitamente aos cidadãos um conjunto específico de medicamentos, disponíveis em pontos geográficos distintos e em quantidades específicas.
 
-Profissionais de saúde, muitas vezes, desconhecem os medicamentos oferecidos, ou aqueles alternativos oferecidos, ou ainda, aqueles disponíveis apenas em casos de saúde específicos (e não em outros), enfim, as exigências para o acesso. Ainda convém destacar que não é razoável esperar que cada profissional saiba onde quais medicamentos são disponibilizados.
-
-Adicionalmente, tais informações são atualizadas constantemente. O resultado é
+Profissionais de saúde assim como os cidadãos, muitas vezes, desconhecem os medicamentos oferecidos, ou aqueles alternativos oferecidos, ou ainda, aqueles disponíveis apenas em casos de saúde específicos (e não em outros), enfim, as exigências para o acesso. Ainda convém destacar que não é razoável esperar que cada profissional ou cidadão saiba onde quais medicamentos são disponibilizados,
+principalmente quando tais informações são atualizadas constantemente. O resultado é
 a dificuldade de acesso aos medicamentos.
 
-sem dizer onde onde podem ser obtidos. Naturalmente, o indivíduo também não sabe onde obter um medicamento de sua necessidade. A intenção é oferecer um sistema escalável, configurável por município de tal forma que os medicamentos e as informações pertinentes, assim como a disponibilidade deles (estoque) possa ser consultada tanto pela população quanto por sistemas de informação em saúde.
+## Análise (contexto)
 
-## Problema
-
-A rede de assistência à saúde inclui medicamentos disponibilizados pelos
-municípios.
-
-Apesar de alguns propostas, ainda há carência de um sistema por meio do qual cada prefeitura identifique os medicamentos que oferece, onde estão disponíveis e o estoque.
-
-## Análise
+O Sistema Medicamentos oferece informações para indivíduos (cidadãos),
+profissionais de saúde e sistemas de software externos (por exemplo, o Conecte SUS Cidadão). As informações são mantidas
+por um responsável técnico pelas informações e a operação do sistema é realizada
+por um administrador.
 
 ![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml?token=GHSAT0AAAAAABOOXPAQU5AILBOST54L2ZN2YPKXOYA)
-
-Um serviço pode disponibilizar a atualização e a consulta a
-tais informações a quem desejar. Convém esclarecer que inclui detalhes de medicamentos oferecidos para qual finalidade, o que varia por município e útil para o profissional de saúde que está prescrevendo, dentre outros benefícios. O Conecte SUS Cidadão pode disponibilizar esta informação para toda a
-população.
 
 ## Protótipos
 
