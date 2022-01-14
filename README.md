@@ -20,8 +20,20 @@ por um administrador.
 
 ![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml?token=GHSAT0AAAAAABOOXPAQU5AILBOST54L2ZN2YPKXOYA)
 
+## Design
+
+Visando escalabilidade e o fato de que mudanças serão bem
+menos frequentes que consultas, o padrão [CQRS](https://martinfowler.com/bliki/CQRS.html) orienta a arquitetura
+definida abaixo. O serviço Admin fica responsável pelas
+atualizações e produção dos dados que serão consultados
+pelo serviço Search. Desta forma, podemos ter tantas
+instâncias de Search quanto necessárias.
+
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml?token=GHSAT0AAAAAABOOXPAQU5AILBOST54L2ZN2YPKXOYA)
+
 ## Protótipos
 
+- [Microsserviço](https://github.com/tonymfreitas/medicaments-tcc-ufg)
 - Versão inicial: [aqui](https://xd.adobe.com/view/15d4b16b-5017-47b0-9fc9-3dc1e916f2b7-4087/?fullscreen)
 - PFC Bruno Marques
 - Repositório Douglas (https://github.com/doug1n/drugs-consultation-frontend)

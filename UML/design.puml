@@ -1,0 +1,47 @@
+@startuml design
+
+hide circle
+hide methods
+hide empty members
+
+skinparam component {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam interface {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam actor {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+actor :Software Cliente: as CLIENTE
+actor :Responsável Técnico: as RT
+actor Administrador
+actor Indivíduo
+actor :Profissional de Saúde: as PS
+
+Component "Medicamentos Admin Service" as ADMIN << Spring Boot >>
+Component "Medicamentos Search Service" as SEARCH << Spring Boot >>
+Component "Admin GUI" as WADMIN <<web>>
+Component "GUI" as GUI <<mobile>>
+WADMIN .right.> () "ADMIN API" 
+[ADMIN API] - ADMIN
+GUI .right.> () "SEARCH API" : use
+[SEARCH API] -up- SEARCH
+CLIENTE .left.> ()  "SEARCH API" : use
+RT .up.> WADMIN : use
+Administrador .right.> WADMIN : use
+ADMIN --> SEARCH : sinaliza atualização
+Indivíduo -right-> GUI
+PS -up-> GUI
+
+
+@enduml
