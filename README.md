@@ -23,7 +23,7 @@ Apesar de alguns propostas, ainda há carência de um sistema por meio do qual c
 
 ## Análise
 
-![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/rnds/master/tools/fhirpathcli/UML/analise.puml)
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml?token=GHSAT0AAAAAABOOXPAQU5AILBOST54L2ZN2YPKXOYA)
 
 Um serviço pode disponibilizar a atualização e a consulta a
 tais informações a quem desejar. Convém esclarecer que inclui detalhes de medicamentos oferecidos para qual finalidade, o que varia por município e útil para o profissional de saúde que está prescrevendo, dentre outros benefícios. O Conecte SUS Cidadão pode disponibilizar esta informação para toda a
