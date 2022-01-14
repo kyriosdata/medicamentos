@@ -1,0 +1,28 @@
+@startuml contexto
+
+hide circle
+hide methods
+hide empty members
+
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+actor Indivíduo
+actor :Profissional de Saúde: as PS
+actor Administrador
+actor :Responsável Técnico: as TECNICO
+actor :Software Cliente: as CLIENTE 
+
+(Medicamentos\nsistema) as SISTEMA
+
+Indivíduo --> SISTEMA
+PS --> SISTEMA
+
+Administrador -up-> SISTEMA
+TECNICO -up-> SISTEMA
+CLIENTE -up-> SISTEMA
+
+@enduml
