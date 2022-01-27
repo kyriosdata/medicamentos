@@ -46,3 +46,5 @@ ATC é o código único que identifica um grupo terapêutico. Cada medicamento t
 hospitalar ou outro.
 
 O modelo acima está ilustrado em uma [planilha](https://docs.google.com/spreadsheets/d/0B2KOoPbti6jscUZrRk13d2RtbVN4VVBlVi1ITUdORXlsRTB3/edit?resourcekey=0-EMRJxgldWFNg3ElwbnPysw#gid=506244534) incompleta e possivelmente contendo dados incorretos, mas suficiente para o nosso entendimento. Uma planilha [alternativa](https://docs.google.com/spreadsheets/d/1Jd5Xi46n09tDePDtXergs4LRgx9rhUThXXj8xFKpLEQ/edit#gid=500494510) com as mesmas características também pode ser consultada.
+
+Um protótipo dos dados encontra-se disponível e acessível [aqui](http://ec2-18-207-244-242.compute-1.amazonaws.com:8080/swagger-ui.html).
