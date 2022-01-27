@@ -10,18 +10,16 @@
 
 - _Como administrador eu preciso verificar se a solução disponibilizada encontra-se em operação e fornecer dados (total de consultas, origem, horário e outros) (evidências) do uso da solução._
 
-
 ## Requisitos de software
 
-1. O sistema deve oferecer busca por texto completo ou parte, tanto da denominação genérica quanto do grupo terapêutico. 
+1. O sistema deve oferecer busca por texto completo ou parte, tanto da denominação genérica quanto do grupo terapêutico.
 1. O sistema deve fornecer a lista de todos os medicamentos disponíveis ordenados pelo nome.
-1. O sistema deve fornecer a lista dos grupos terapêuticos e dos medicamentos correspondentes. 
+1. O sistema deve fornecer a lista dos grupos terapêuticos e dos medicamentos correspondentes.
 1. O sistema deve permitir a navegação entre os grupos terapêuticos conforme a hierarquia (“árvore”) entre eles.
 1. O sistema deve fornecer a lista de referências (bibliografia) da qual parte dos dados fornecidos foram obtidos.
-1. O sistema deve oferecer informações adicionais por meio de “perguntas frequentes” e as “respostas correspondentes”, ambas em texto apenas. 
+1. O sistema deve oferecer informações adicionais por meio de “perguntas frequentes” e as “respostas correspondentes”, ambas em texto apenas.
 1. O sistema deve permitir o uso de recurso para indicar que um medicamento ou grupo terapêutico é “favorito”.
 1. O sistema deve facilitar o acesso à lista de “favoritos”.
-
 
 # Análise
 
@@ -36,13 +34,15 @@ por um administrador.
 
 ## Modelo de dados
 
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/dados.puml)
+
 Todo medicamento está associado a uma “folha” da “árvore” de grupos terapêuticos. Esta hierarquia dos grupos terapêuticos é empregada
-como um instrumento para classificação de medicamentos. 
+como um instrumento para classificação de medicamentos.
 
 Grupo terapêutico
 Nome (busca será feita por este campo)
 Código ATC do grupo terapêutico
 
-Medicamento: 
+Medicamento:
 Denominação genérica (busca por este campo)
 Descrição/forma farmacêutica: (a) cápsula; (b) aerossol oral; (c) aerossol bucal; (d) cápsula para inalação; (e) cápsula para inalação oral; (f) comprimido; (g) comprimido solução oral; (h) comprimido para suspensão; (i) comprimido para uso tópico pó; (j) comprimido solução oral xarope; (j) comprimido suspensão oral
