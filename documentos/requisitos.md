@@ -37,7 +37,7 @@ por um administrador.
 Todo medicamento está associado a uma “folha” da “árvore” de grupos terapêuticos. Esta hierarquia dos grupos terapêuticos é empregada
 como um instrumento para classificação de medicamentos. Consulte [planilha](https://docs.google.com/spreadsheets/d/1K35ONf_4p2LWjIwenw4T8ufV1Yi1HVl3Wq_laF454Wc/edit?usp=sharing) contendo os grupos terapêuticos.
 
-O modelo abaixo reúne informações a serem disponibilizadas.
+O modelo abaixo reúne informações a serem disponibilizadas. Observe que alguns elementos deste modelo são independentes de um dado município em questão, por exemplo, o grupo terapêutico de um medicamento e a forma farmacêutica. Outras como exigência, disponibilidade e o componente podem variar por município.
 
 ![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/dados.puml)
 

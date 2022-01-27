@@ -32,10 +32,17 @@ entity Componente <<enum>> {
     BÁSICO
 } 
 
+entity Disponibilidade {
+    endereço
+    posição geográfica
+    quantidade
+}
+
 GT |o-- GT : pai
 Medicamento }o.right.|| GT : classificado em
 Medicamento }o..|| FF : " descrição"
 Medicamento }o.left.|| Componente
-Medicamento }o.up.|| Estoque
+Medicamento ||.up.|| Disponibilidade
+Medicamento ||.up.|| Exigência
 
 @enduml
