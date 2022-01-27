@@ -3,9 +3,17 @@
 Um sistema de informação para auxiliar o acesso a medicamentos oferecidos
 pela rede municipal de assistência à saúde. 
 
-Tal sistema é provavelmente útil a todo e qualquer município brasileiro. As origens,
-contudo, nos remetem ao município de Goiânia, sob a orientação da Profa. Mércia Pandolfo Provin ([Faculdade de Farmácia](https://www.farmacia.ufg.br/)
+Tais informações devem estar acessíveis por meio de um dispositivo móvel,
+pela web e também para outros sistemas de informação existentes, por exemplo,
+com apoio à prescrição, que queiram usufruir de tais informações.
+
+O Sistema Medicamentos é provavelmente útil a todo e qualquer município brasileiro. As origens,
+contudo, nos remetem ao município de Goiânia, sob a orientação da Profa. Mércia Pandolfo Provin ([Faculdade de Farmácia](https://www.farmacia.ufg.br/))
 com a realização pela [Fábrica de Software](https://ww2.inf.ufg.br/fabrica/) do Instituto de Informática (UFG).
+
+## Objetivo
+
+Facilitar o acesso a informações atualizadas sobre a disponibilidade e exigências para a obtenção de medicamentos na rede pública. 
 
 ## Problema
 
@@ -14,6 +22,13 @@ Cada município oferece gratuitamente aos cidadãos, por meio do Sistema Único 
 Profissionais de saúde assim como os cidadãos, muitas vezes, desconhecem os medicamentos oferecidos, ou aqueles alternativos oferecidos, ou ainda, aqueles disponíveis apenas em casos de saúde específicos (e não em outros), enfim, as exigências para o acesso. Ainda convém destacar que não é razoável esperar que cada profissional ou cidadão saiba onde quais medicamentos são disponibilizados,
 principalmente quando tais informações são atualizadas constantemente. O resultado é
 a dificuldade de acesso aos medicamentos.
+
+## Visão da solução
+
+Sistema  que oferece um canal de acesso a informações sobre fármacos, onde estão disponíveis e as exigências a serem satisfeitas para o acesso a eles. Esta informação é oferecida por meio de quatro componentes principais: (a) Cliente Mobile; (b) Cliente Web; (c) Cliente Web Gestão; e (d) Medicamentos (API backend). 
+
+Os componentes Mobile e Web oferecem acesso tanto para a população em geral quanto para profissionais de saúde. A atualização das informações é realizada por meio do Cliente Web Gestão e, por fim, as informações são todas mantidas pelo componente Medicamentos, que oferece API REST (possivelmente GraphQL) para acesso às informações e manutenção delas. 
+
 
 ## Análise (contexto)
 
