@@ -7,9 +7,6 @@ Tais informações devem estar acessíveis por meio de um dispositivo móvel,
 pela web e também para outros sistemas de informação existentes, por exemplo,
 com apoio à prescrição, que queiram usufruir de tais informações.
 
-O Sistema Medicamentos é provavelmente útil a todo e qualquer município brasileiro. As origens,
-contudo, nos remetem ao município de Goiânia, sob a orientação da Profa. Mércia Pandolfo Provin ([Faculdade de Farmácia](https://www.farmacia.ufg.br/))
-com a realização pela [Fábrica de Software](https://ww2.inf.ufg.br/fabrica/) do Instituto de Informática (UFG).
 
 ## Objetivo
 
@@ -28,3 +25,9 @@ a dificuldade de acesso aos medicamentos.
 - [Requisitos](documentos/requisitos.md)
 - [Design](documentos/design.md)
 
+## Realização (créditos e agradecimentos)
+
+Vários já ofereceram contribuições e este esforço continua visando colocar em produção o Sistema Medicamentos. 
+
+Na origem está o município de Goiânia (GO), sob a orientação da Profa. Mércia Pandolfo Provin ([Faculdade de Farmácia](https://www.farmacia.ufg.br/))
+com o apoio da [Fábrica de Software](https://ww2.inf.ufg.br/fabrica/) do Instituto de Informática (UFG).
