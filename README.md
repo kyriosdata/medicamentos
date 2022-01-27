@@ -6,7 +6,7 @@ pela rede municipal de assistência à saúde. Tal sistema é provavelmente
 
 ## Problema
 
-Cada município oferece gratuitamente aos cidadãos, por meio do Sistema Único de Saúde (SUS), um conjunto específico de medicamentos, disponíveis em pontos geográficos distintos e em quantidades específicas.
+Cada município oferece gratuitamente aos cidadãos, por meio do Sistema Único de Saúde (SUS), um conjunto específico de medicamentos, cada um deles com exigências de acesso específicas, disponíveis em pontos geográficos distintos e em quantidades variadas.
 
 Profissionais de saúde assim como os cidadãos, muitas vezes, desconhecem os medicamentos oferecidos, ou aqueles alternativos oferecidos, ou ainda, aqueles disponíveis apenas em casos de saúde específicos (e não em outros), enfim, as exigências para o acesso. Ainda convém destacar que não é razoável esperar que cada profissional ou cidadão saiba onde quais medicamentos são disponibilizados,
 principalmente quando tais informações são atualizadas constantemente. O resultado é
