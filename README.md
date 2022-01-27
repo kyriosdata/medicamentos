@@ -23,13 +23,6 @@ Profissionais de saúde assim como os cidadãos, muitas vezes, desconhecem os me
 principalmente quando tais informações são atualizadas constantemente. O resultado é
 a dificuldade de acesso aos medicamentos.
 
-## Visão da solução
-
-Sistema  que oferece um canal de acesso a informações sobre fármacos, onde estão disponíveis e as exigências a serem satisfeitas para o acesso a eles. Esta informação é oferecida por meio de quatro componentes principais: (a) Cliente Mobile; (b) Cliente Web; (c) Cliente Web Gestão; e (d) Medicamentos (API backend). 
-
-Os componentes Mobile e Web oferecem acesso tanto para a população em geral quanto para profissionais de saúde. A atualização das informações é realizada por meio do Cliente Web Gestão e, por fim, as informações são todas mantidas pelo componente Medicamentos, que oferece API REST (possivelmente GraphQL) para acesso às informações e manutenção delas. 
-
-
 ## Análise (contexto)
 
 O Sistema Medicamentos oferece informações para indivíduos (cidadãos),
