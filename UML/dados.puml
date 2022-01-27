@@ -1,0 +1,32 @@
+@startuml dados
+
+hide circle
+hide methods
+hide empty members
+
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+entity "Grupo Terapêutico" as GT {
+    nome
+    ATC
+}
+
+entity Medicamento {
+    denominação genérica
+    forma farmacêutica
+}
+
+entity "Forma farmacêutica" as FF <<lookup table>> {
+    código
+    descrição
+}
+
+GT |o-- GT : pai
+Medicamento }o.right.|| GT : classificado em
+Medicamento }o..|| FF : " descrição"
+
+@enduml
