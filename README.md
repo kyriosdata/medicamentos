@@ -1,8 +1,11 @@
 ## Medicamentos
 
 Um sistema de informação para auxiliar o acesso a medicamentos oferecidos
-pela rede municipal de assistência à saúde. Tal sistema é provavelmente
-útil a todo e qualquer município brasileiro. 
+pela rede municipal de assistência à saúde. 
+
+Tal sistema é provavelmente útil a todo e qualquer município brasileiro. As origens,
+contudo, nos remetem ao município de Goiânia, sob a orientação da Profa. Mércia Pandolfo Provin ([Faculdade de Farmácia](https://www.farmacia.ufg.br/)
+com a realização pela [Fábrica de Software](https://ww2.inf.ufg.br/fabrica/) do Instituto de Informática (UFG).
 
 ## Problema
 
