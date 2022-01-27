@@ -23,7 +23,9 @@
 1. O sistema deve facilitar o acesso à lista de “favoritos”.
 
 
-## Análise (contexto)
+# Análise
+
+## Diagrama de contexto
 
 O Sistema Medicamentos oferece informações para indivíduos (cidadãos),
 profissionais de saúde e sistemas de software externos (por exemplo, o Conecte SUS Cidadão). As informações são mantidas
@@ -32,3 +34,15 @@ por um administrador.
 
 ![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml)
 
+## Modelo de dados
+
+Todo medicamento está associado a uma “folha” da “árvore” de grupos terapêuticos. Esta hierarquia dos grupos terapêuticos é empregada
+como um instrumento para classificação de medicamentos. 
+
+Grupo terapêutico
+Nome (busca será feita por este campo)
+Código ATC do grupo terapêutico
+
+Medicamento: 
+Denominação genérica (busca por este campo)
+Descrição/forma farmacêutica: (a) cápsula; (b) aerossol oral; (c) aerossol bucal; (d) cápsula para inalação; (e) cápsula para inalação oral; (f) comprimido; (g) comprimido solução oral; (h) comprimido para suspensão; (i) comprimido para uso tópico pó; (j) comprimido solução oral xarope; (j) comprimido suspensão oral
