@@ -1,6 +1,6 @@
 ## Medicamentos
 
-Um sistema de informação para auxiliar o acesso a medicamentos oferecidos
+Um sistema de informação _em desenvolvimento_ para auxiliar o acesso a medicamentos oferecidos
 pela rede municipal de assistência à saúde. 
 
 Tais informações devem estar acessíveis por meio de um dispositivo móvel,
