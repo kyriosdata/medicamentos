@@ -1,4 +1,17 @@
-## Requisitos
+## Requisitos de usuário
+
+- _Como indivíduo ou profissional de saúde eu desejo consultar informações sobre um medicamento para saber que tipo de documento (exigência) há para acesso ao medicamento e onde ele pode ser obtido, dentre outras_.
+
+- _Como profissional de saúde eu desejo consultar informações sobre um medicamento pelo grupo terapêutico, para assegurar um uso adequado e buscar por alternativas para uma prescrição_.
+
+- _Como administrador eu preciso manter atualizadas as informações sobre medicamentos para que elas possam ser precisas e refletir a realidade para quem as consome_.
+
+- _Como software cliente eu preciso obter informações sobre medicamentos para que eu possa apresentá-las aos meus usuários quando requisitado._
+
+- _Como operador eu preciso verificar se a solução disponibilizada encontra-se em operação e fornecer dados (total de consultas, origem, horário e outros) (evidências) do uso da solução._
+
+
+## Requisitos de software
 
 1. O sistema deve oferecer busca por texto completo ou parte, tanto da denominação genérica quanto do grupo terapêutico. 
 1. O sistema deve fornecer a lista de todos os medicamentos disponíveis ordenados pelo nome.
