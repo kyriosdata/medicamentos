@@ -4,7 +4,7 @@
 
 - _Como profissional de saúde eu desejo consultar informações sobre um medicamento pelo grupo terapêutico, para assegurar um uso adequado e buscar por alternativas para uma prescrição_.
 
-- _Como administrador eu preciso manter atualizadas as informações sobre medicamentos para que elas possam ser precisas e refletir a realidade para quem as consome_.
+- _Como responsável técnico eu preciso manter atualizadas as informações acessíveis pelo sistema para que elas possam ser precisas e refletir a realidade para quem as consome_.
 
 - _Como software cliente eu preciso obter informações sobre medicamentos para que eu possa apresentá-las aos meus usuários quando requisitado._
 
