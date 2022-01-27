@@ -35,8 +35,9 @@ por um administrador.
 ## Modelo de dados
 
 Todo medicamento está associado a uma “folha” da “árvore” de grupos terapêuticos. Esta hierarquia dos grupos terapêuticos é empregada
-como um instrumento para classificação de medicamentos.
-Conforme o modelo abaixo.
+como um instrumento para classificação de medicamentos. Consulte [planilha](https://docs.google.com/spreadsheets/d/1K35ONf_4p2LWjIwenw4T8ufV1Yi1HVl3Wq_laF454Wc/edit?usp=sharing) contendo os grupos terapêuticos.
+
+O modelo abaixo reúne informações a serem disponibilizadas.
 
 ![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/dados.puml)
 
@@ -44,4 +45,4 @@ ATC é o código único que identifica um grupo terapêutico. Cada medicamento t
 "componente", que indica se o mesmo é especializado,
 hospitalar ou outro.
 
-O modelo acima está ilustrado em uma [planilha](https://docs.google.com/spreadsheets/d/0B2KOoPbti6jscUZrRk13d2RtbVN4VVBlVi1ITUdORXlsRTB3/edit?resourcekey=0-EMRJxgldWFNg3ElwbnPysw#gid=506244534) incompleta e possivelmente contendo dados incorretos, mas suficiente para o nosso entendimento.
+O modelo acima está ilustrado em uma [planilha](https://docs.google.com/spreadsheets/d/0B2KOoPbti6jscUZrRk13d2RtbVN4VVBlVi1ITUdORXlsRTB3/edit?resourcekey=0-EMRJxgldWFNg3ElwbnPysw#gid=506244534) incompleta e possivelmente contendo dados incorretos, mas suficiente para o nosso entendimento. Uma planilha [alternativa](https://docs.google.com/spreadsheets/d/1Jd5Xi46n09tDePDtXergs4LRgx9rhUThXXj8xFKpLEQ/edit#gid=500494510) com as mesmas características também pode ser consultada.

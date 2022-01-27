@@ -10,14 +10,13 @@ skinparam class {
     BorderColor #505050
 }
 
-entity "Grupo Terapêutico" as GT {
+entity "Grupo Terapêutico" as GT <<lookup table>> {
     <<PK>> ATC
     nome
 }
 
 entity Medicamento {
     denominação genérica
-    forma farmacêutica
     concentração
 }
 
@@ -37,5 +36,6 @@ GT |o-- GT : pai
 Medicamento }o.right.|| GT : classificado em
 Medicamento }o..|| FF : " descrição"
 Medicamento }o.left.|| Componente
+Medicamento }o.up.|| Estoque
 
 @enduml

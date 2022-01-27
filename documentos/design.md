@@ -48,7 +48,7 @@ Oferece acesso de consulta.
 ## Protótipos
 
 - [Camada de dados](https://github.com/tonymfreitas/medicaments-tcc-ufg)
-- Versão inicial: [aqui](https://xd.adobe.com/view/15d4b16b-5017-47b0-9fc9-3dc1e916f2b7-4087/?fullscreen)
+- Design da interação do cliente [mobile](https://xd.adobe.com/view/15d4b16b-5017-47b0-9fc9-3dc1e916f2b7-4087/?fullscreen)
 - PFC Bruno Marques
 - Repositório Douglas (https://github.com/doug1n/drugs-consultation-frontend)
 - Douglas [tcc](documentos/tcc-douglas-vieira.pdf)
