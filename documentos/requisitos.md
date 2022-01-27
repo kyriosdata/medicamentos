@@ -34,15 +34,14 @@ por um administrador.
 
 ## Modelo de dados
 
-![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/dados.puml)
-
 Todo medicamento está associado a uma “folha” da “árvore” de grupos terapêuticos. Esta hierarquia dos grupos terapêuticos é empregada
 como um instrumento para classificação de medicamentos.
+Conforme o modelo abaixo.
 
-Grupo terapêutico
-Nome (busca será feita por este campo)
-Código ATC do grupo terapêutico
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/dados.puml)
 
-Medicamento:
-Denominação genérica (busca por este campo)
-Descrição/forma farmacêutica: (a) cápsula; (b) aerossol oral; (c) aerossol bucal; (d) cápsula para inalação; (e) cápsula para inalação oral; (f) comprimido; (g) comprimido solução oral; (h) comprimido para suspensão; (i) comprimido para uso tópico pó; (j) comprimido solução oral xarope; (j) comprimido suspensão oral
+ATC é o código único que identifica um grupo terapêutico. Cada medicamento também possui um
+"componente", que indica se o mesmo é especializado,
+hospitalar ou outro.
+
+O modelo acima está ilustrado em uma [planilha](https://docs.google.com/spreadsheets/d/0B2KOoPbti6jscUZrRk13d2RtbVN4VVBlVi1ITUdORXlsRTB3/edit?resourcekey=0-EMRJxgldWFNg3ElwbnPysw#gid=506244534) incompleta e possivelmente contendo dados incorretos, mas suficiente para o nosso entendimento.

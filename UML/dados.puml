@@ -11,13 +11,14 @@ skinparam class {
 }
 
 entity "Grupo Terapêutico" as GT {
+    <<PK>> ATC
     nome
-    ATC
 }
 
 entity Medicamento {
     denominação genérica
     forma farmacêutica
+    concentração
 }
 
 entity "Forma farmacêutica" as FF <<lookup table>> {
@@ -25,8 +26,16 @@ entity "Forma farmacêutica" as FF <<lookup table>> {
     descrição
 }
 
+entity Componente <<enum>> {
+    ESPECIALIZADO
+    HOSPITALAR
+    ESTRATÉGICO
+    BÁSICO
+} 
+
 GT |o-- GT : pai
 Medicamento }o.right.|| GT : classificado em
 Medicamento }o..|| FF : " descrição"
+Medicamento }o.left.|| Componente
 
 @enduml
