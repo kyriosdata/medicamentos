@@ -23,6 +23,11 @@ Profissionais de saúde assim como os cidadãos, muitas vezes, desconhecem os me
 principalmente quando tais informações são atualizadas constantemente. O resultado é
 a dificuldade de acesso aos medicamentos.
 
+## Organização
+
+- [Requisitos](documentos/requisitos.md)
+- [Design](documentos/design.md)
+
 ## Requisitos
 
 1. O sistema deve oferecer busca por texto completo ou parte, tanto da denominação genérica quanto do grupo terapêutico. 
