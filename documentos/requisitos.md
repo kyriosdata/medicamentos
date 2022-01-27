@@ -8,7 +8,7 @@
 
 - _Como software cliente eu preciso obter informações sobre medicamentos para que eu possa apresentá-las aos meus usuários quando requisitado._
 
-- _Como operador eu preciso verificar se a solução disponibilizada encontra-se em operação e fornecer dados (total de consultas, origem, horário e outros) (evidências) do uso da solução._
+- _Como administrador eu preciso verificar se a solução disponibilizada encontra-se em operação e fornecer dados (total de consultas, origem, horário e outros) (evidências) do uso da solução._
 
 
 ## Requisitos de software
