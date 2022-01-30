@@ -1,0 +1,47 @@
+@startuml c4-context
+title Software System - System Context
+
+top to bottom direction
+
+skinparam {
+  shadowing false
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+  ArrowColor #gray
+}
+
+hide stereotype
+
+skinparam rectangle<<SoftwareSystem>> {
+  BackgroundColor #1168bd
+  FontColor #ffffff
+  BorderColor #0b4884
+  roundCorner 20
+}
+
+skinparam rectangle<<SoftwareExternal>> {
+  BackgroundColor #gray
+  FontColor #ffffff
+  BorderColor #gray
+  roundCorner 20
+}
+
+skinparam person<<User>> {
+  BackgroundColor #08427b
+  FontColor #ffffff
+  BorderColor #052e56
+}
+
+person "Indivíduo\n<size:10>[pessoa]</size>" <<User>> as User
+person "Profissional de Saúde\n<size:10>[pessoa]</size>" <<User>> as PS
+
+rectangle "=Medicamentos\n<size:10>[sistema]</size>" <<SoftwareSystem>> as SoftwareSystem
+rectangle "Cliente\n<size:10>[software externo]</size>" <<SoftwareExternal>> as SC
+
+User ..> SoftwareSystem : "Usa"
+PS ..> SoftwareSystem : "Usa"
+SC .right.> SoftwareSystem : "Usa"
+
+@enduml
