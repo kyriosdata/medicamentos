@@ -1,4 +1,12 @@
-## Design
+# Design
+
+O _design_ segue o [modelo C4](https://c4model.com/) nas seções abaixo.
+
+## Diagrama de contexto
+
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/c4-context.puml)
+
+## Contêineres
 
 Visando escalabilidade e o fato de que mudanças serão bem
 menos frequentes que consultas, o padrão [CQRS](https://martinfowler.com/bliki/CQRS.html) orienta a arquitetura
@@ -7,7 +15,7 @@ atualizações e produção dos dados que serão consultados
 pelo serviço Search. Desta forma, podemos ter tantas
 instâncias de Search quanto necessárias.
 
-![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/design.puml)
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/c4-container.puml)
 
 A ADMIN API demanda autenticação e
 autorização, o que não necessariamente é o caso de SEARCH API, afinal, as informações fornecidas são públicas.
