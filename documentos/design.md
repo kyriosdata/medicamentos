@@ -17,8 +17,7 @@ instâncias de Search quanto necessárias.
 
 ![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/c4-container.puml)
 
-A ADMIN API demanda autenticação e
-autorização, o que não necessariamente é o caso de SEARCH API, afinal, as informações fornecidas são públicas.
+A API Admin demanda autenticação e autorização, o que não necessariamente é o caso da API Search.
 Por outro lado, será necessário evitar o "uso indevido"
 desta API por meio de limitador de uso como [Bucket4j](https://github.com/vladimir-bukhtoyarov/bucket4j).
 
