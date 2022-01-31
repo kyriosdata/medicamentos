@@ -1,5 +1,4 @@
 @startuml c4-context
-title Software System - System Context
 
 top to bottom direction
 
@@ -35,13 +34,16 @@ skinparam person<<User>> {
 }
 
 person "Indivíduo\n<size:10>[pessoa]</size>" <<User>> as User
+person "Administrador\n<size:10>[pessoa]</size>" <<User>> as Administrador
+person "Responsável técnico\n<size:10>[pessoa]</size>" <<User>> as RT
 person "Profissional de Saúde\n<size:10>[pessoa]</size>" <<User>> as PS
 
 rectangle "=Medicamentos\n<size:10>[sistema]</size>" <<SoftwareSystem>> as SoftwareSystem
 rectangle "Cliente\n<size:10>[software externo]</size>" <<SoftwareExternal>> as SC
 
-User ..> SoftwareSystem : "Usa"
-PS ..> SoftwareSystem : "Usa"
+User ..> SoftwareSystem : " Usa"
+PS ..> SoftwareSystem : " Usa"
 SC .right.> SoftwareSystem : "Usa"
-
+Administrador .up.> SoftwareSystem : " Usa"
+RT .up.> SoftwareSystem : " Usa"
 @enduml
