@@ -1,5 +1,7 @@
 @startuml c4-context
 
+title Medicamentos (diagrama de contexto)
+
 top to bottom direction
 
 skinparam {

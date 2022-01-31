@@ -1,0 +1,71 @@
+@startuml c4-container
+
+skinparam {
+  shadowing false
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+  ArrowColor #gray
+}
+
+skinparam package {
+}
+
+skinparam component {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam component<<ui>> {
+    BackgroundColor #lightblue
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam component<<service>> {
+    BackgroundColor #lightyellow
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam database {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+skinparam actor {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor #505050
+}
+
+package Medicamentos #line.dashed{
+ component "==Web Application\n<size:10>[Admin GUI]</size>" <<ui>> as WebAdmin
+ component "==Web Application\n<size:10>[Search GUI]</size>" <<ui>> as WebSearch
+ component "==Mobile Application\n<size:10>[Search GUI]</size>" <<ui>> as MobileSearch
+ component "==API Admin\n<size:10>[command]</size>" <<service>> as ApiAdmin
+ component "==API Search\n<size:10>[query]</size>" <<service>> as ApiSearch
+ database "Dados" as DB
+}
+
+actor Administrador
+actor "Responsável Técnico" as RT
+actor "Indivíduo ou\nProfissional de Saúde" as PS
+actor "Software Cliente" as SC
+
+Administrador .down.> WebAdmin : "usa"
+RT .down.> WebAdmin : "atualiza informações"
+
+WebAdmin -right-> ApiAdmin : usa
+ApiAdmin -right-> DB : "atualiza"
+ApiSearch -up-> DB : "usa\n[apenas leitura]"
+WebSearch -left-> ApiSearch : usa
+MobileSearch -up-> ApiSearch : usa
+SC -left-> ApiSearch : "usa para consultar informações"
+PS --> WebSearch : "usa para consultar informações"
+PS --> MobileSearch : "usa para consultar informações"
+
+@enduml
