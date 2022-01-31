@@ -30,7 +30,7 @@ profissionais de saúde e sistemas de software externos (por exemplo, o Conecte 
 por um responsável técnico pelas informações e a operação do sistema é realizada
 por um administrador.
 
-![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/contexto.puml)
+![modelo](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/kyriosdata/medicamentos/master/UML/c4-context.puml)
 
 ## Modelo de dados
 
