@@ -1,6 +1,6 @@
 # Design
 
-O _design_ segue o [modelo C4](https://c4model.com/) nas seções abaixo.
+O _design_ segue registrado segundo o [modelo C4](https://c4model.com/).
 
 ## Diagrama de contexto
 

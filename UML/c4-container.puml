@@ -43,12 +43,18 @@ skinparam actor {
 }
 
 package Medicamentos #line.dashed{
- component "==Web Application\n<size:10>[Admin GUI]</size>" <<ui>> as WebAdmin
- component "==Web Application\n<size:10>[Search GUI]</size>" <<ui>> as WebSearch
- component "==Mobile Application\n<size:10>[Search GUI]</size>" <<ui>> as MobileSearch
- component "==API Admin\n<size:10>[command]</size>" <<service>> as ApiAdmin
- component "==API Search\n<size:10>[query]</size>" <<service>> as ApiSearch
- database "Dados" as DB
+ package "Command (CQRS)" {
+    component "==Web Application\n<size:10>[Admin GUI]</size>" <<ui>> as WebAdmin
+    component "==API Admin\n<size:10>[command]</size>" <<service>> as ApiAdmin
+    database "Dados\n[command]" as DBW
+ }
+
+ package "Query (CQRS)" {
+    component "==Web Application\n<size:10>[Search GUI]</size>" <<ui>> as WebSearch
+    component "==Mobile Application\n<size:10>[Search GUI]</size>" <<ui>> as MobileSearch
+    component "==API Search\n<size:10>[query]</size>" <<service>> as ApiSearch
+    database "Dados\n[query]" as DBR
+ }
 }
 
 actor Administrador
@@ -60,8 +66,9 @@ Administrador .down.> WebAdmin : "usa"
 RT .down.> WebAdmin : "atualiza informações"
 
 WebAdmin -right-> ApiAdmin : usa
-ApiAdmin -right-> DB : "atualiza"
-ApiSearch -up-> DB : "usa\n[apenas leitura]"
+ApiAdmin -right-> DBW : "mantém"
+ApiSearch -up-> DBR : "usa\n [apenas leitura]"
+ApiAdmin -down-> DBR : "gera\n [atualiza]"
 WebSearch -left-> ApiSearch : usa
 MobileSearch -up-> ApiSearch : usa
 SC -left-> ApiSearch : "usa para consultar informações"

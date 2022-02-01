@@ -1,16 +1,18 @@
 ## Medicamentos
 
 Um sistema de informação _em desenvolvimento_ para auxiliar o acesso a medicamentos oferecidos
-pela rede municipal de assistência à saúde. 
+pela rede municipal de assistência à saúde.
 
 Tais informações devem estar acessíveis por meio de um dispositivo móvel,
 pela web e também para outros sistemas de informação existentes, por exemplo,
 com apoio à prescrição, que queiram usufruir de tais informações.
 
+Adicionalmente, embora as informações sejam específicas por município, a expectativa
+é que possa atender todos os municípios brasileiros, ao todo, 5570.
 
 ## Objetivo
 
-Facilitar o acesso a informações atualizadas sobre a disponibilidade e exigências para a obtenção de medicamentos na rede pública. 
+Facilitar o acesso a informações atualizadas sobre a disponibilidade e exigências para a obtenção de medicamentos na rede pública.
 
 ## Problema
 
@@ -27,7 +29,7 @@ a dificuldade de acesso aos medicamentos.
 
 ## Realização (créditos e agradecimentos)
 
-Vários já ofereceram contribuições e este esforço continua visando colocar em produção o Sistema Medicamentos. 
+Vários já ofereceram contribuições e este esforço continua visando colocar em produção o Sistema Medicamentos.
 
 Na origem está o município de Goiânia (GO), sob a orientação da Profa. Mércia Pandolfo Provin ([Faculdade de Farmácia](https://www.farmacia.ufg.br/))
 com o apoio da [Fábrica de Software](https://ww2.inf.ufg.br/fabrica/) do Instituto de Informática (UFG).
