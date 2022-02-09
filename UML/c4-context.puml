@@ -35,8 +35,6 @@ skinparam person<<User>> {
   BorderColor #052e56
 }
 
-person "Ficticio\n<size:10>[pessoa]</size>" <<User>> as Ficticio
-
 person "Indivíduo\n<size:10>[pessoa]</size>" <<User>> as User
 person "Administrador\n<size:10>[pessoa]</size>" <<User>> as Administrador
 person "Responsável técnico\n<size:10>[pessoa]</size>" <<User>> as RT
@@ -45,7 +43,6 @@ person "Profissional de Saúde\n<size:10>[pessoa]</size>" <<User>> as PS
 rectangle "=Medicamentos\n<size:10>[sistema]</size>" <<SoftwareSystem>> as SoftwareSystem
 rectangle "Cliente\n<size:10>[software externo]</size>" <<SoftwareExternal>> as SC
 
-Ficticio ..> SoftwareSystem : " apenas para ilustrar"
 User ..> SoftwareSystem : " Usa"
 PS ..> SoftwareSystem : " Usa"
 SC .right.> SoftwareSystem : "Usa"
