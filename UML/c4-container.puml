@@ -69,8 +69,8 @@ WebAdmin -right-> ApiAdmin : usa
 ApiAdmin -right-> DBW : "mantém"
 ApiSearch -up-> DBR : "usa\n [apenas leitura]"
 ApiAdmin -down-> DBR : "gera\n [atualiza]"
-WebSearch -left-> ApiSearch : usa
-MobileSearch -up-> ApiSearch : usa
+WebSearch -left-> ApiSearch : call
+MobileSearch -up-> ApiSearch : call
 SC -left-> ApiSearch : "usa para consultar informações"
 PS --> WebSearch : "usa para consultar informações"
 PS --> MobileSearch : "usa para consultar informações"
