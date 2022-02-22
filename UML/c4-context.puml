@@ -48,4 +48,5 @@ PS ..> SoftwareSystem : " Usa"
 SC .right.> SoftwareSystem : "Usa"
 Administrador .up.> SoftwareSystem : " Usa"
 RT .up.> SoftwareSystem : " Usa"
+
 @enduml
